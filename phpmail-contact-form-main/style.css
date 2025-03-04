@@ -8,6 +8,141 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+.header {
+    background-color: #0051a2;
+    padding: 10px 0;
+    position: fixed; /* ເພີ່ມ position: fixed; */
+    width: 100%; /* ເພີ່ມ width: 100%; */
+    z-index: 100; /* ເພີ່ມ z-index ເພື່ອໃຫ້ header ຢູ່ເທິງສຸດ */
+}
+
+.containerheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav ul li a:hover {
+    color: #007bff;
+}
+
+.button1 .request-quote {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button1 .request-quote:hover {
+    background-color: #0056b3;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-section {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .button {
+        margin: 0;
+        text-align: center;
+        width: auto;
+   
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: static;
+        
+        padding: 20px;
+        z-index: 10;
+        align-items: flex-end; /* ປ່ຽນເປັນ flex-end */
+    }
+
+    .nav ul {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+    
+    .logo {
+        margin-right: 100px;
+        
+    }
+
+    .menu-toggle.active .fa-bars:before { /* ປ່ຽນໄອຄອນ */
+        content: "\f00d"; /* ໄອຄອນກາຄູນ */
+        color: #e00909;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .wrapper {
     position: fixed;
@@ -79,14 +214,17 @@ body {
     padding:0; /* ລົບ padding ດ້ານລຸ່ມ */
     margin: 0;
     text-align: left;
+    padding: 20px;
 }
 
 .top-section-content {
-    max-width: 87%;
+    max-width: 1200px;
     margin: 0 auto;
     
     
+    
 }
+
 
 .top-section h1 {
     font-size: 2.5em;
@@ -100,11 +238,14 @@ body {
     color: #333;
 }
 
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 20px 20px; /* ລົບ padding ດ້ານເທິງ */
+ 
+  
 }
 
 .service-card {
@@ -122,6 +263,7 @@ body {
 .service-card:last-child {
     border-right: none;
 }
+
 
 .service-card h2 {
     font-size: 1.5em;
@@ -181,9 +323,11 @@ body {
 @media (max-width: 768px) {
     .service-card,.top-section {
         width: 90%;
-        margin: 10px auto;
+       
         border-right: none;
-        border-bottom: 1px solid #ddd;
+        margin-left:  20px; 
+        
+       
     }
 
     .service-card:last-child {
@@ -191,5 +335,177 @@ body {
     }
     .top-section:last-child{
         border-bottom: none;
+    }
+}
+.footer {
+    background-color: #003366;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 141, 177, 0.1);
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.subscribe-form button {
+    background-color: #00a0e9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 100%;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        text-align: left;
+       
+    }
+
+    .footer-section h3 {
+        text-align: left;
+    }
+
+    .footer-section ul {
+        text-align: left;
+    }
+}
+.language-selector {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.language-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #000000;
+    animation: slideLeft 2s linear infinite alternate; /* ເພີ່ມ animation */
+}
+
+.language-item img {
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.language-item span {
+    font-size: 0.9em;
+}
+/* Hover Effect */
+.language-item:hover {
+    transform: translateY(-5px); /* ເຄື່ອນຍ້າຍຂຶ້ນເມື່ອ hover */
+}
+
+.language-item:hover img {
+    transform: scale(1.1); /* ຂະຫຍາຍຮູບພາບເມື່ອ hover */
+}
+
+.language-item:hover span {
+    color: #0056b3; /* ປ່ຽນສີຂໍ້ຄວາມເມື່ອ hover */
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .language-item {
+        width: 33.33%; /* ໃຫ້ແຕ່ລະອົງປະກອບໃຊ້ 33.33% ຂອງຄວາມກວ້າງ */
+        margin: 10px 0; /* ປັບ margin */
+    }
+    .language-item img {
+        width: 60px;
+        height: 40px;
+        
     }
 }
