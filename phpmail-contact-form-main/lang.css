@@ -1,12 +1,58 @@
-.language-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: flex; /* ເພື່ອຈັດວາງທຸງ ແລະຂໍ້ຄວາມໃນແນວນອນ */
-    align-items: center; /* ຈັດວາງທຸງ ແລະຂໍ້ຄວາມໃນແນວຕັ້ງໃຫ້ກາງ */
+body {
+    background-color: #003366; /* ສີພື້ນຫຼັງ */
+    color: white; /* ສີຕົວອັກສອນ */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.flag-icon {
-    width: 30px; /* ປັບຂະໜາດທຸງຕາມຕ້ອງການ */
-    margin-right: 5px; /* ເພີ່ມຊ່ອງຫວ່າງລະຫວ່າງທຸງ ແລະຂໍ້ຄວາມ */
+.container {
+    width: 300px; /* ປັບຂະໜາດ container */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+input[type="email"]::placeholder {
+    color: #ccc;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00a0e9; /* ສີປຸ່ມ */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0088c2; /* ສີປຸ່ມເມື່ອ hover */
 }

@@ -3,34 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ຕິດຕາມຜົນງານ</title>
     <link rel="stylesheet" href="lang.css">
 </head>
 <body>
-    <button class="language-button" data-lang="la">
-        <img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon">
-        <span class="language-text">ລາວ</span>
-    </button>
-
-    <script>
-const languageButton = document.querySelector('.language-button');
-let currentLang = 'la'; // ຕັ້ງພາສາເລີ່ມຕົ້ນເປັນລາວ
-
-languageButton.addEventListener('click', function() {
-    if (currentLang === 'la') {
-        languageButton.innerHTML = '<img src="th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
-        languageButton.dataset.lang = 'en';
-        currentLang = 'en';
-        console.log("ປ່ຽນພາສາເປັນ: en");
-        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາອັງກິດ
-    } else {
-        languageButton.innerHTML = '<img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
-        languageButton.dataset.lang = 'la';
-        currentLang = 'la';
-        console.log("ປ່ຽນພາສາເປັນ: la");
-        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາລາວ
-    }
-});
-    </script>
+    <div class="container">
+        <h1>ຕິດຕາມຜົນງານ</h1>
+        <div class="input-group">
+            <label for="email">ໃສ່ອີເມວ</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+        <button class="submit-btn">ຕິດຕາມ</button>
+    </div>
 </body>
 </html>

@@ -48,7 +48,7 @@
                 
             </div>
         </div>
-    </header><br><br><br>
+    </header>
      
      <div class="service-container">
     <div class="top-section">
@@ -171,7 +171,7 @@
     <div class="footer-container">
         <div class="footer-section">
             <h3>ທີ່ຢູ່ບໍລິສັດ</h3>
-            <p><i class="fas fa-map-marker-alt"></i> 123 ຖະໜົນ ຕົວຢ່າງ, ນະຄອນຫຼວງ</p>
+            <p><i class="fas fa-map-marker-alt"></i> ຕຳແໜງ ບ້ານ ໂພນສະຫວ່າງ, ຮ່ອມ 11 ເມືອງ ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</p>
             <p><i class="fas fa-phone"></i> +856 020 52 774 279</p>
             <p><i class="fas fa-envelope"></i> Techa.translation@gmail.com</p>
             <div class="social-icons">
@@ -204,10 +204,11 @@
             </form>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>© 2025 ສະຫງວນລິຂະສິດໂດຍ ບໍລິສັດເທີກອາດ ແປພາສາຕ່າງປະເທດ ຈຳກັດຜູ້ດຽວ</p>
-    </div>
+   
 </footer>
+<div class="footer-bottom">
+    <p>© 2025 ສະຫງວນລິຂະສິດໂດຍ ບໍລິສັດເທັກອາດ ແປພາສາຕ່າງປະເທດ ຈຳກັດຜູ້ດຽວ</p>
+</div>
 <script>
  const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
@@ -218,21 +219,24 @@ menuToggle.addEventListener('click', () => {
 });
 
 const languageButton = document.querySelector('.language-button');
-let currentLang = 'la'; // ຕັ້ງພາສາເລີ່ມຕົ້ນເປັນລາວ
+let currentLang = localStorage.getItem('lang') || 'la'; // ໂຫຼດພາສາຈາກ localStorage ຫຼືຕັ້ງເປັນລາວ
+
+// ຕັ້ງເນື້ອຫາຂອງປຸ່ມຕາມພາສາທີ່ເລືອກ
+if (currentLang === 'en') {
+    languageButton.innerHTML = '<img src="th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
+    languageButton.dataset.lang = 'en';
+} else {
+    languageButton.innerHTML = '<img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
+    languageButton.dataset.lang = 'la';
+}
 
 languageButton.addEventListener('click', function() {
     if (currentLang === 'la') {
-        languageButton.innerHTML = '<img src="th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
-        languageButton.dataset.lang = 'en';
-        currentLang = 'en';
-        console.log("ປ່ຽນພາສາເປັນ: en");
-        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາອັງກິດ
+        window.location.href = 'lao.html'; // ລິ້ງໄປຫາໜ້າພາສາອັງກິດ
+        localStorage.setItem('lang', 'en'); // ເກັບພາສາໃນ localStorage
     } else {
-        languageButton.innerHTML = '<img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
-        languageButton.dataset.lang = 'la';
-        currentLang = 'la';
-        console.log("ປ່ຽນພາສາເປັນ: la");
-        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາລາວ
+        window.location.href = 'index.html'; // ລິ້ງໄປຫາໜ້າພາສາລາວ
+        localStorage.setItem('lang', 'la'); // ເກັບພາສາໃນ localStorage
     }
 });
 

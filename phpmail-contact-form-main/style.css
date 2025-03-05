@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex; /* ເພີ່ມ flexbox */
+    flex-direction: column; /* ຈັດລຽງອົງປະກອບເປັນຖັນ */
+    min-height: 100vh; /* ໃຫ້ body ກວມເອົາຄວາມສູງຂອງໜ້າຈໍ */
 }
 .header {
     background-color: #0051a2;
@@ -205,11 +208,15 @@ body {
 
 
 .wrapper {
-    position: fixed;
+    position: relative; /* ປ່ຽນເປັນ relative ຫຼືລຶບ position: fixed */
     bottom: 20px;
     right: 5px;
     width: 90px;
     margin: 0;
+}
+.service-container {
+    flex: 1; /* ເພີ່ມ flex: 1; ເພື່ອໃຫ້ມັນຂະຫຍາຍເຕັມພື້ນທີ່ */
+    /* ... CSS ອື່ນໆ ... */
 }
 
 .wrapper .button {
@@ -401,6 +408,8 @@ body {
     background-color: #003366;
     color: white;
     padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .footer-container {
@@ -453,13 +462,14 @@ body {
     margin-right: 10px;
     transition: background-color 0.3s ease;
 }
-
-.social-icons a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.footer-section ul li a:hover {
+    color: #04eeff;
 }
+
 
 .subscribe-form {
     display: flex;
+    
 }
 
 .subscribe-form input[type="email"] {
@@ -468,6 +478,7 @@ body {
     border-radius: 4px 0 0 4px;
     flex: 1;
     min-width: 200px;
+    font-family: "Noto Sans Lao Looped", sans-serif;
 }
 
 .subscribe-form button {
@@ -477,14 +488,18 @@ body {
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    font-size: 16px;
 }
 
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 40px;
+    background-color: #fff;
+    color: #000000;
+    
+    
 }
 
 
@@ -496,6 +511,9 @@ body {
         margin-left: 30px;
         text-align: left;
        
+    }
+    .footer-bottom{
+        font-size: 14px;
     }
 
     .footer-section h3 {
