@@ -1,0 +1,12 @@
+.language-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex; /* ເພື່ອຈັດວາງທຸງ ແລະຂໍ້ຄວາມໃນແນວນອນ */
+    align-items: center; /* ຈັດວາງທຸງ ແລະຂໍ້ຄວາມໃນແນວຕັ້ງໃຫ້ກາງ */
+}
+
+.flag-icon {
+    width: 30px; /* ປັບຂະໜາດທຸງຕາມຕ້ອງການ */
+    margin-right: 5px; /* ເພີ່ມຊ່ອງຫວ່າງລະຫວ່າງທຸງ ແລະຂໍ້ຄວາມ */
+}

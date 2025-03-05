@@ -24,6 +24,7 @@
                 <img src="th/images/" alt="TechArt Logo">
             </div>
             <div class="right-section">
+                
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -34,15 +35,20 @@
                         <li><a href="#">ບໍລິການ</a></li>
                         <li><a href="#">ລາຄາ</a></li>
                         <li><a href="#">ຕິດຕໍ່ພວກເຮົາ</a></li>
+                        <button class="language-button" data-lang="la">
+                            <img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon">
+                            <span class="language-text">ລາວ</span>
+                        </button>
                         <div class="button1">
                             <a href="#" class="request-quote">ຂໍລາຄາ</a>
+                            
                         </div>
                     </ul>
                 </nav>
                 
             </div>
         </div>
-    </header>
+    </header><br><br><br>
      
      <div class="service-container">
     <div class="top-section">
@@ -83,7 +89,7 @@
                 <li><i class="fas fa-check-circle"></i> ໃບຄ້ຳປະກັນ</li>
                 <li><i class="fas fa-check-circle"></i> ແບບຟອມເອກະສານລັດຖະການ</li>
                 <li><i class="fas fa-check-circle"></i> ແບບຟອມເອກະສານບໍລິສັດ</li>
-                <li><i class="fas fa-check-circle"></i> ແບບຟອມຂໍວິຊາ</li>
+                <li><i class="fas fa-check-circle"></i> ແບບຟອມຂໍວິຊາຳາຍໃນປະເທດ ແລະ ຕ່າງປະເທດ</li>
             </ul>
             <button class="quote-button">ຮັບໃບສະເໜີລາຄາຟຣີ</button>
         </div>
@@ -93,7 +99,7 @@
             <ul>
                 <li><i class="fas fa-check-circle"></i> ສັນຍາ ສຳປະທານໂຄງການ</li>
                 <li><i class="fas fa-check-circle"></i> ສັນຍາຊື້-ຂາຍພະລັງງານ ໄຟຟ້າ</li>
-                <li><i class="fas fa-check-circle"></i> ສັນຍາ ຜູຸ້ຖືຮຸ້ນ</li>
+                <li><i class="fas fa-check-circle"></i> ສັນຍາ ຜູ້ຖືຮຸ້ນ</li>
                 <li><i class="fas fa-check-circle"></i> ສັນຍາ ຊື້-ຂາຍຮຸ້ນ</li>
                 <li><i class="fas fa-check-circle"></i> ກົດລະບຽບບໍລິສັດ</li>
                 <li><i class="fas fa-check-circle"></i> ສັນຍາ ການບໍລິການ</li>
@@ -210,6 +216,28 @@ menuToggle.addEventListener('click', () => {
     nav.classList.toggle('active');
     menuToggle.classList.toggle('active'); // ເພີ່ມ class active ໃຫ້กับ menu-toggle
 });
+
+const languageButton = document.querySelector('.language-button');
+let currentLang = 'la'; // ຕັ້ງພາສາເລີ່ມຕົ້ນເປັນລາວ
+
+languageButton.addEventListener('click', function() {
+    if (currentLang === 'la') {
+        languageButton.innerHTML = '<img src="th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
+        languageButton.dataset.lang = 'en';
+        currentLang = 'en';
+        console.log("ປ່ຽນພາສາເປັນ: en");
+        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາອັງກິດ
+    } else {
+        languageButton.innerHTML = '<img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
+        languageButton.dataset.lang = 'la';
+        currentLang = 'la';
+        console.log("ປ່ຽນພາສາເປັນ: la");
+        // ທີ່ນີ້ເຈົ້າສາມາດເພີ່ມລະຫັດເພື່ອປ່ຽນເນື້ອຫາຂອງເວັບໄຊໂດຍອີງຕາມພາສາລາວ
+    }
+});
+
+
+
 </script>
 </body>
 </html>
