@@ -17,6 +17,7 @@ body {
     position: fixed; /* ເພີ່ມ position: fixed; */
     width: 100%; /* ເພີ່ມ width: 100%; */
     z-index: 100; /* ເພີ່ມ z-index ເພື່ອໃຫ້ header ຢູ່ເທິງສຸດ */
+  
 }
 
 .containerheader {
@@ -197,14 +198,6 @@ body {
     }
    
 }
-
-
-
-
-
-
-
-
 
 
 .wrapper {
