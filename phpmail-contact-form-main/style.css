@@ -10,6 +10,7 @@ body {
     display: flex; /* ເພີ່ມ flexbox */
     flex-direction: column; /* ຈັດລຽງອົງປະກອບເປັນຖັນ */
     min-height: 100vh; /* ໃຫ້ body ກວມເອົາຄວາມສູງຂອງໜ້າຈໍ */
+   
 }
 .header {
     background-color: #0051a2;
@@ -485,6 +486,8 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #fff;
     color: #000000;
+    padding: 20px;
+    
     
     
 }
