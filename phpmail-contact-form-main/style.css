@@ -199,32 +199,19 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .wrapper {
-    position: relative; /* ປ່ຽນເປັນ relative ຫຼືລຶບ position: fixed */
-    bottom: 20px;
-    right: 5px;
-    width: 90px;
-    margin: 0;
-}
-.service-container {
-    flex: 1; /* ເພີ່ມ flex: 1; ເພື່ອໃຫ້ມັນຂະຫຍາຍເຕັມພື້ນທີ່ */
-    /* ... CSS ອື່ນໆ ... */
+    position: fixed;
+    bottom: 20px; /* ປັບໄລຍະຫ່າງຈາກລຸ່ມ */
+    right: 20px; /* ປັບໄລຍະຫ່າງຈາກຂວາ */
+    width: 60px;
+    z-index: 1000;
 }
 
 .wrapper .button {
-    display: block; /* ປ່ຽນຈາກ inline-block ແລະ float: left */
+    display: block;
     height: 60px;
     width: 60px;
     text-decoration: none;
-    margin: 10px auto; /* ປ່ຽນ margin ເພື່ອຈັດວາງກາງ ແລະມີໄລຍະຫ່າງ */
     overflow: hidden;
     background: #25D366;
     border-radius: 50px;
