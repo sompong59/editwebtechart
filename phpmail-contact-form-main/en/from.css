@@ -1,38 +1,19 @@
-.containerfrom1 {
+.container {
     width: 900px;
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-body {
-	font-family: "Noto Sans Lao", sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-select, input, textarea, button{
-    font-family: "Noto Sans Lao", sans-serif;
-}
 
-.file-upload {
-    background-color: #f0f0f0;
-    padding: 10px;
-    
-  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
-
-.language-group .form-group:first-child {
-    margin-right: 5px; /* ເພີ່ມ margin-right */
-}
-
-
 
 .form-group {
-    margin-bottom: 30px; /* ລຶບຊ່ອງຫວ່າງດ້ານລຸ່ມ */
+    margin-bottom: 30px;
 }
 
 label {
@@ -52,10 +33,10 @@ textarea {
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
-.required{
+
+.required {
     color: red;
 }
-
 
 select {
     width: 100%;
@@ -68,7 +49,7 @@ textarea {
     resize: vertical;
 }
 
-button {
+.button1 {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -79,29 +60,33 @@ button {
     width: 100%;
 }
 
-button:hover {
+.button1hover {
     background-color: #45a049;
 }
 
-.language-group, .name-phone-group {
+.language-group,
+.name-phone-group {
     display: flex;
 }
 
-.language-group .form-group, .name-phone-group .form-group {
+.language-group .form-group,
+.name-phone-group .form-group {
     width: 50%;
 }
 
 @media (max-width: 768px) {
-    .containerfrom {
+    .container {
         width: 90%;
         padding: 20px;
     }
 
-    .language-group, .name-phone-group {
+    .language-group,
+    .name-phone-group {
         flex-direction: column;
     }
 
-    .language-group .form-group, .name-phone-group .form-group {
+    .language-group .form-group,
+    .name-phone-group .form-group {
         width: 100%;
         margin-bottom: 15px;
     }

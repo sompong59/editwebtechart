@@ -6,45 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="styletext.css">
+    
     <link rel="stylesheet" href="stylecss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 </head>
 <body>
 
-<div class="wrapper">
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-facebook-f"></i>
-            </div>
-            <span>Facebook</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-                <i class="fab fa-whatsapp"></i>
-            </div>
-            <span>Whatsapp</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-instagram"></i>
-            </div>
-            <span>Instagram</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-tiktok"></i>
-            </div>
-            <span>Tiktok</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-youtube"></i>
-            </div>
-            <span>YouTube</span>
-         </a>
-      </div>
+
     <div class="container">
         <h2>ຂໍໃບສະເໜີລາຄາຟຣີ</h2>
 

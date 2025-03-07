@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="style.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
@@ -37,7 +37,7 @@
                             <img src="th/images/lao.png" alt="Lao Language" class="flag-icon">
                             <span class="language-text">Lao</span>
                         </button>
-                        <div class="button1">
+                        <div class="button">
                             <a href="#" class="request-quote">Get a Quote</a>
                         </div>
                     </ul>

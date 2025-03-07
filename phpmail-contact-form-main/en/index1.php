@@ -6,46 +6,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="styletext.css">
-    <link rel="stylesheet" href="stylecss/style.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 </head>
+<style>
+  
+    .home{
+        padding: 50px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 900px;
+        margin-top: 40px;
+       
+     
+    }
+    .containerfrom1{
+        align-items: center;
+    }
+    
+
+
+.language-group .form-group:first-child {
+    margin-right: 5px; /* ເພີ່ມ margin-right */
+}
+
+.language-group .form-group:last-child {
+    margin-left: 5px; /* ເພີ່ມ margin-left */
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px; /* ລຶບຊ່ອງຫວ່າງດ້ານລຸ່ມ */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.required{
+    color: red;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.language-group, .name-phone-group {
+    display: flex;
+}
+
+.language-group .form-group, .name-phone-group .form-group {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .language-group, .name-phone-group {
+        flex-direction: column;
+    }
+
+    .language-group .form-group, .name-phone-group .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+</style>
 <body>
 
-<div class="wrapper">
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-facebook-f"></i>
-            </div>
-            <span>Facebook</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-                <i class="fab fa-whatsapp"></i>
-            </div>
-            <span>Whatsapp</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-instagram"></i>
-            </div>
-            <span>Instagram</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-tiktok"></i>
-            </div>
-            <span>Tiktok</span>
-         </a>
-         <a href="#" class="button">
-            <div class="icon">
-               <i class="fab fa-youtube"></i>
-            </div>
-            <span>YouTube</span>
-         </a>
-      </div>
-    <div class="container">
+<div class="home">
+
+    <div class="containerfrom1">
         <h2>ຂໍໃບສະເໜີລາຄາຟຣີ</h2>
 
         <form action="contact.php" method="POST" enctype="multipart/form-data" id="contactForm">
@@ -132,7 +211,7 @@
         </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+    </div>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {

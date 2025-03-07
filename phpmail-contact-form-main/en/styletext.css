@@ -1,19 +1,4 @@
-.containerfrom1 {
-    width: 900px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-body {
-	font-family: "Noto Sans Lao", sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
+
 select, input, textarea, button{
     font-family: "Noto Sans Lao", sans-serif;
 }
@@ -29,7 +14,23 @@ select, input, textarea, button{
     margin-right: 5px; /* ເພີ່ມ margin-right */
 }
 
+.language-group .form-group:last-child {
+    margin-left: 5px; /* ເພີ່ມ margin-left */
+}
+.containerform1 {
+    width: 900px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
 
 .form-group {
     margin-bottom: 30px; /* ລຶບຊ່ອງຫວ່າງດ້ານລຸ່ມ */
@@ -92,7 +93,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .containerfrom {
+    .container {
         width: 90%;
         padding: 20px;
     }
