@@ -33,18 +33,18 @@
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Contact Us</a></li>
-                        <button class="language-button" data-lang="la">
+                        <button class="button2" data-lang="la">
                             <img src="th/images/lao.png" alt="Lao Language" class="flag-icon">
                             <span class="language-text">Lao</span>
                         </button>
-                        <div class="button">
-                            <a href="#" class="request-quote">Get a Quote</a>
+                        <div class="button3">
+                            <a href="#" class="request">Get a Quote</a>
                         </div>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
+    <script src="jsaction/javaScript.js"></script>
 </body>
 </html>

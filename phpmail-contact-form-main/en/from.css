@@ -1,26 +1,46 @@
+body {
+	font-family: "Noto Sans Lao", sans-serif;
+    background-color: #f4f4f4;
+   
+   
+}
 .container {
-    width: 900px;
+    width: 800px;
     background-color: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 1px solid #abaaaa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.language-group .form-group:first-child {
+    margin-right: 10px; /* ເພີ່ມ margin-right */
+}
+.file-upload {
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 30px;
+    
 }
 
 .form-group {
     margin-bottom: 30px;
+    
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #555;
+    
 }
 
 input[type="text"],
@@ -78,6 +98,7 @@ textarea {
     .container {
         width: 90%;
         padding: 20px;
+        margin: 0 auto;
     }
 
     .language-group,
