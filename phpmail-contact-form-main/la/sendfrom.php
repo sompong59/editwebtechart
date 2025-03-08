@@ -18,8 +18,7 @@
         <h2>ຂໍໃບສະເໜີລາຄາຟຣີ</h2>
 
         <form action="contact.php" method="POST" enctype="multipart/form-data" id="contactForm">
-            <fieldset>
-                <legend>ເລືອກພາສາ</legend>
+           
                 <div class="language-group">
                     <div class="form-group">
                         <label for="originalLanguage">ເລືອກພາສາຕົ້ນສະບັບ <span class="required">*</span></label>
@@ -48,7 +47,7 @@
                         </select>
                     </div>
                 </div>
-            </fieldset>
+            
 
             <div class="form-group">
                 <label for="serviceType">ປະເພດການບໍລິການ <span class="required">*</span></label>
@@ -92,7 +91,7 @@
                 <textarea id="message" name="text" rows="5" placeholder="ກະລຸນາແຈ້ງຄວາມຕ້ອງການຂອງທ່ານ ເຊັ່ນ ຈຸດປະສົງຂອງການໃຊ້ຄໍາແປ ຯລຯ"></textarea>
             </div>
 
-            <button class="button1" type="submit" id="submitButton">ສົ່ງຂໍ້ມູນ</button>
+            <button class="buttonbody" type="submit" id="submitButton">ສົ່ງຂໍ້ມູນ</button>
             <div id="loadingIndicator" style="display: none;">ກຳລັງສົ່ງ...</div>
         </form>
 

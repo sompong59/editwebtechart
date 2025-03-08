@@ -1,0 +1,145 @@
+.why_section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.why_section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.why_section h4 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.why_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.why_container .box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.why_container .img-box {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.why_container .img-box img {
+    max-width: 100px;
+}
+
+.why_container h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.why_container p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.btn-box {
+    margin-top: 30px;
+}
+
+.btn-box a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-box a:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .why_container .box {
+        width: 100%;
+    }
+}
+/* ... (CSS ອື່ນໆຂອງເຈົ້າ) ... */
+
+.why_container .box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; /* ເພີ່ມ position: relative; */
+}
+
+.why_container .box span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute; /* ເພີ່ມ position: absolute; */
+    top: 10px; /* ເພີ່ມ top; */
+    left: 10px; /* ເພີ່ມ left; */
+    margin: 0; /* ປ່ຽນ margin-right ເປັນ margin: 0; */
+}
+
+.box-container {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    font-family: sans-serif;
+    margin: 20px auto; /* ເພີ່ມ margin: 20px auto; */
+    display: block; /* ເພີ່ມ display: block; */
+}
+
+.number-circle {
+    width: 40px; /* ກຳນົດຄວາມກວ້າງຂອງວົງມົນ */
+    height: 40px; /* ກຳນົດຄວາມສູງຂອງວົງມົນ */
+    border-radius: 50%; /* ເຮັດໃຫ້ເປັນວົງມົນ */
+    background-color: #4CAF50; /* ກຳນົດສີພື້ນຫຼັງ */
+    color: white; /* ກຳນົດສີຕົວອັກສອນ */
+    display: flex; /* ໃຊ້ flexbox ເພື່ອຈັດວາງຕົວເລກ */
+    justify-content: center; /* ຈັດວາງຕົວເລກຢູ່ກາງແນວນອນ */
+    align-items: center; /* ຈັດວາງຕົວເລກຢູ່ກາງແນວຕັ້ງ */
+    position: absolute; /* ກຳນົດຕຳແໜ່ງ */
+    top: -20px; /* ຈັດວາງວົງມົນຢູ່ເທິງຂອບ */
+    left: 20px; /* ຈັດວາງວົງມົນຢູ່ຊ້າຍ */
+    font-size: 1.2em; /* ກຳນົດຂະໜາດຕົວອັກສອນ */
+}
+
+.box-content {
+    text-align: center; /* ຈັດວາງເນື້ອຫາຢູ່ກາງ */
+}
+
+
+.title {
+    font-size: 1.5em; /* ກຳນົດຂະໜາດຕົວອັກສອນຂອງຫົວຂໍ້ */
+    font-weight: bold; /* ເຮັດໃຫ້ຫົວຂໍ້ໜາ */
+    margin-bottom: 10px; /* ເພີ່ມຊ່ອງຫວ່າງລຸ່ມຫົວຂໍ້ */
+}
+
+.description {
+    font-size: 1em; /* ກຳນົດຂະໜາດຕົວອັກສອນຂອງຄຳອະທິບາຍ */
+    line-height: 1.6; /* ກຳນົດໄລຍະຫ່າງຂອງແຖວ */
+}

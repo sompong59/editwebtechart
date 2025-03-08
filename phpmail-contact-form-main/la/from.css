@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&display=swap');
-
 /* CSS Variables */
 :root {
     --primary-color: #4CAF50;
@@ -22,7 +21,7 @@
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid var(--border-color);
@@ -31,6 +30,23 @@
     max-width: 400px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #loadingIndicator {
@@ -41,41 +57,48 @@
 }
 
 body {
-    font-family: "Noto Sans Lao", sans-serif;
-    background-color: #0051e6;
+    font-family: "Noto Sans Lao Looped", sans-serif;
+    background-color: #f4f4f4;
 }
 
 select,
 input,
 textarea,
-.submit-button {
-    font-family: "Noto Sans Lao", sans-serif;
+.buttonbody {
+    font-family: "Noto Sans Lao Looped", sans-serif;
 }
 
 .file-upload {
     background-color: var(--background-color);
     padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    width: 100%;
 }
 
-.language-group .form-group:first-child {
-    margin-right: 5px;
+.language-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
 }
 
-.language-group .form-group:last-child {
-    margin-left: 5px;
+.language-group .form-group {
+    margin-bottom: 30px;
+
+}
+.required{
+    color: red;
 }
 
 .containerbody {
-    width: 90%;
-    max-width: 900px;
+    width: 90%; /* ປ່ຽນ width ເປັນ 90% */
+    max-width: 900px; /* ປ່ຽນ max-width ເປັນ 900px */
     background-color: #fff;
-    padding: 40px;
+    padding: 50px; /* ປ່ຽນ padding ເປັນ 30px */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
+    margin: 40px auto; /* ປ່ຽນ margin ເປັນ 40px auto */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -85,7 +108,11 @@ h2 {
 }
 
 .form-group {
-    margin: 0 15px 20px;
+    margin-bottom: 30px;
+    display: flex; /* ປ່ຽນ form-group ເປັນ Flexbox */
+    flex-direction: column; /* ຈັດວາງອົງປະກອບໃນແນວຕັ້ງ */
+    
+    
 }
 
 label {
@@ -103,25 +130,23 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
-    border-radius: 4px;
-}
-
-.required {
-    color: red;
+    box-sizing: border-box;
+    flex-grow: 1; /* ໃຫ້ input ປັບຂະໜາດໄດ້ */
+    box-sizing: border-box;
 }
 
 select {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 textarea {
     resize: vertical;
 }
 
-.submit-button {
+.buttonbody {
     background-color: var(--primary-color);
     color: white;
     padding: 12px 20px;
@@ -129,49 +154,28 @@ textarea {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: calc(100% - 30px);
-    margin: 0 15px 20px;
+    width: 100%;
 }
 
-.submit-button:hover {
+.buttonbody:hover {
     background-color: var(--primary-color-hover);
-}
-
-.language-group,
-.name-phone-group {
-    display: flex;
-}
-
-.language-group .form-group,
-.name-phone-group .form-group {
-    width: 50%;
 }
 
 @media (max-width: 768px) {
     .containerbody {
-        width: 90%;
-        padding: 30px;
+        padding: 20px;
+        
+        
+        
     }
-
+   
     .form-group {
-        margin: 0 15px 20px;
+        margin-bottom: 10px; /* ຫຼຸດ margin-bottom ເມື່ອໜ້າຈໍຫຍໍ້ */
     }
 
-    .submit-button {
-        width: calc(100% - 30px);
-        margin: 0 15px 20px;
-    }
-
-    .language-group .form-group,
-    .name-phone-group .form-group {
-        width: 100%;
-    }
-
-    .language-group .form-group:first-child {
-        margin-right: 0;
-    }
-
-    .language-group .form-group:last-child {
-        margin-left: 0;
+    .language-group {
+        grid-template-columns: 1fr;
+        gap: 2px; /* ຫຼຸດ gap ເມື່ອໜ້າຈໍຫຍໍ້ */
+        align-items: stretch;
     }
 }
