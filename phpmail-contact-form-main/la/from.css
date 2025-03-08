@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&display=swap');
 
+/* CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --primary-color-hover: #45a049;
+    --text-color: #333;
+    --border-color: #ddd;
+    --background-color: #f0f0f0;
+}
 
-
+/* Modal Styles */
 .modal {
     position: fixed;
     z-index: 1;
@@ -14,31 +22,15 @@
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff;
     margin: 15% auto;
-    padding: 15px;
-    border: 1px solid #888;
+    padding: 20px;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     width: 80%;
     max-width: 400px;
     text-align: center;
-    max-height: 200px;
-    overflow: auto;
-    font-size: 14px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #loadingIndicator {
@@ -56,16 +48,16 @@ body {
 select,
 input,
 textarea,
-button {
+.submit-button {
     font-family: "Noto Sans Lao", sans-serif;
 }
 
 .file-upload {
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
-    width: 100%; /* ເພີ່ມ width: 100%; */
+    width: 100%;
 }
 
 .language-group .form-group:first-child {
@@ -89,15 +81,10 @@ button {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .form-group {
-    margin: 0 15px 20px;
-}
-
-.button1 {
-    width: calc(100% - 30px);
     margin: 0 15px 20px;
 }
 
@@ -115,7 +102,7 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
@@ -126,7 +113,7 @@ textarea {
 select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
@@ -134,18 +121,20 @@ textarea {
     resize: vertical;
 }
 
-.button1 {
-    background-color: #4CAF50;
+.submit-button {
+    background-color: var(--primary-color);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    width: calc(100% - 30px);
+    margin: 0 15px 20px;
 }
 
-.button1:hover {
-    background-color: #45a049;
+.submit-button:hover {
+    background-color: var(--primary-color-hover);
 }
 
 .language-group,
@@ -158,33 +147,24 @@ textarea {
     width: 50%;
 }
 
-
 @media (max-width: 768px) {
     .containerbody {
         width: 90%;
         padding: 30px;
-    
     }
 
     .form-group {
         margin: 0 15px 20px;
     }
 
-    .button1 {
+    .submit-button {
         width: calc(100% - 30px);
         margin: 0 15px 20px;
     }
-   
-    /* .language-group
-     {
-        flex-direction: column;
-        
-    } */
 
     .language-group .form-group,
     .name-phone-group .form-group {
         width: 100%;
-     
     }
 
     .language-group .form-group:first-child {
