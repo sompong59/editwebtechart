@@ -20,7 +20,7 @@
      <header class="header">
         <div class="containerheader">
             <div class="logo">
-                <img src="th/images/" alt="TechArt Logo">
+                <img src="../images/" alt="TechArt Logo">
             </div>
             <div class="right-section">
                 
@@ -35,7 +35,7 @@
                         <li><a href="#">ລາຄາ</a></li>
                         <li><a href="#">ຕິດຕໍ່ພວກເຮົາ</a></li>
                         <button class="language-button" data-lang="la">
-                            <img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon">
+                            <img src="../th/images/lao.png" alt="ພາສາລາວ" class="flag-icon">
                             <span class="language-text">ລາວ</span>
                         </button>
                         <div class="button">

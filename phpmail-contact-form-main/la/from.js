@@ -11,10 +11,10 @@ let currentLang = localStorage.getItem('lang') || 'la'; // ໂຫຼດພາສ
 
 // ຕັ້ງເນື້ອຫາຂອງປຸ່ມຕາມພາສາທີ່ເລືອກ
 if (currentLang === 'en') {
-    languageButton.innerHTML = '<img src="th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
+    languageButton.innerHTML = '<img src="../th/images/english.png" alt="ພາສາອັງກິດ" class="flag-icon"><span class="language-text">English</span>';
     languageButton.dataset.lang = 'en';
 } else {
-    languageButton.innerHTML = '<img src="th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
+    languageButton.innerHTML = '<img src="../th/images/lao.png" alt="ພາສາລາວ" class="flag-icon"><span class="language-text">ລາວ</span>';
     languageButton.dataset.lang = 'la';
 }
 

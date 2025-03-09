@@ -74,7 +74,7 @@ if (isset($_POST['originalLanguage'])    &&
                 <h3>ສະບາຍດີບໍລິສັດ Techart ຂ້າພະເຈົ້າສົນໃຈບໍລິການແປພາສາ</h3>
                 <p><strong>ພາສາຕົ້ນສະບັບ</strong>: $originalLanguage</p>
                 <p><strong>ພາສາເປົ້າໝາຍ</strong>: $targetLanguage</p>
-                <p><strong>ພາສາເປົ້າໝາຍ</strong>: $serviceType</p>
+                <p><strong>ປະເພດການແປ</strong>: $serviceType</p>
                 <p><strong>ຂ້າພະເຈົ້າຊື່</strong>: $name</p>
                 <p><strong>Email</strong>: $email</p>
                 <p><strong>ເບີໂທ</strong>: $phoneNamber</p>
