@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="why.css">
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="from.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="customer.css">
     <link rel="stylesheet" href="../la/header.css">
     <link rel="stylesheet" href="../la/footer.css">
     <link rel="stylesheet" href="../la/social-buttons.css">
@@ -16,6 +18,26 @@
  </head>
 <body>
 <?php include '../la/header.php';?>
+
+<section class="herologo">
+        <div class="hero-image">
+            <img src="logo.jpeg" alt="ໂລໂກ້ເທັກອາດ">
+        </div>
+        <div class="hero-content">
+            <div class="company-logo">
+                <img src="trans.png" alt="ໂລໂກ້">
+            </div>
+            <h1>"ຄວາມຖືກຕ້ອງ, ຄວາມເຊື່ອໝັ້ນ, ແລະຄວາມວ່ອງໄວ: ໃຫ້ເຮົາແປພາສາໃຫ້ທ່ານ."</h1>
+            <button class="consultation-btn">ສອບຖາມຂໍ້ມູນເບື້ອງຕົ້ນ</button>
+            <div class="hero-social-icons">
+            <a href="#"><i class="hero-icon-instagram"></i></a>
+           
+            <a href="#"><i class="hero-icon-facebook"></i></a>
+            <a href="#"><i class="hero-icon-twitter"></i></a>
+        </div>
+        </div>
+    </section>
+
     <section class="about-section">
         <div class="container">
             <div class="heading-container text-center">
@@ -57,12 +79,12 @@
     </section>
 
     <div class="service-container">
-    <div class="top-section">
-        <div class="top-section-content">
-            <h2>ການແປເອກະສານພ້ອມຢັ້ງຢືນການແປແມ່ນຫຍັງ?</h2>
-            <p>ການແປເອກະສານພ້ອມຢັ້ງຢືນການແປແມ່ນມີໄວ້ສຳລັບເອກະສານທີ່ໃຊ້ໃນທາງລັດຖະການຕ່າງໆ ເຊິ່ງຜູ້ຮັບຕ້ອງການຢືນຍັນວ່າຄຳແປ ຖືກຕ້ອງ ແລະ ສົມບູນ ເອກະສານດັ່ງກ່າວຖືກໃຊ້ຫຼາຍຄັ້ງໃນສະຖານທີ່ຕ່າງໆເຊັນ ຫ້ອງການຕຳຫຼວດກວດຄົນເຂົ້າເມືອງ ສະຖານທີ່ທາງການ ແລະ ສະຖານທີ່ອື່ນໆ ທັງໃນທ້ອງຖິນ ແລະ ລະດັບນານາຊາດ.</p>
+    <div class="translate-top-section">
+            <div class="translate-top-section-content">
+                <h2>ການແປເອກະສານພ້ອມຢັ້ງຢືນການແປແມ່ນຫຍັງ?</h2>
+                <p>ການແປເອກະສານພ້ອມຢັ້ງຢືນການແປແມ່ນມີໄວ້ສຳລັບເອກະສານທີ່ໃຊ້ໃນທາງລັດຖະການຕ່າງໆ ເຊິ່ງຜູ້ຮັບຕ້ອງການຢືນຍັນວ່າຄຳແປ ຖືກຕ້ອງ ແລະ ສົມບູນ ເອກະສານດັ່ງກ່າວຖືກໃຊ້ຫຼາຍຄັ້ງໃນສະຖານທີ່ຕ່າງໆເຊັນ ຫ້ອງການຕຳຫຼວດກວດຄົນເຂົ້າເມືອງ ສະຖານທີ່ທາງການ ແລະ ສະຖານທີ່ອື່ນໆ ທັງໃນທ້ອງຖິນ ແລະ ລະດັບນານາຊາດ.</p>
+            </div>
         </div>
-    </div>
     <div class="containercard">
        
         <div class="service-card">
@@ -328,6 +350,61 @@
         <div class="navigation">
             <button class="carousel-prev">&#10094;</button>
             <button class="carousel-next">&#10095;</button>
+        </div>
+    </div>
+
+
+    <div class="my-container">
+        <div class="my-header">
+            <h1>ລູກຄ້າທີ່ໄວ້ວາງໃຈ</h1>
+            <div class="my-orange-bar"></div>
+        </div>
+        <div class="my-customer-grid">
+            <div class="my-customer-item">
+                <img src="img/1.png" alt="ຈະເລີນ ເຊກອງ ຄາບອນ">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/2.png" alt="ບໍລິສັດ ທ່ານົກ ວັງເກົ່າ ຖ້າຕົກ">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/3.png" alt="ຮຸ່ງອາລຸນ ຂົນສົ່ງດ່ວນ HAL EXPRESS">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/4.png" alt="ບໍລິສັດ ທ່ານົກ ວັງເກົ່າ ຖ້າຕົກ LPY">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/5.png" alt="CS ENERGY">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/6.png" alt="ລວຍ ຫວຍກາແລັກຊີ18">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/7.png" alt="TMN THONGMANI TRADING">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/8.png" alt="GLC">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/9.png" alt="ANOUSITH EXPRESS">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/10.png" alt="ANOUSITH EXPRESS">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/11.png" alt="Thanaleng Dry Port">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/12.png" alt="BURAPHA AGRO-FORESTRY">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/13.png" alt="MaxHemp">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/14.png" alt="CR">
+            </div>
+            <div class="my-customer-item">
+                <img src="img/15.png" alt="the word bank">
+            </div>
         </div>
     </div>
 

@@ -1,7 +1,22 @@
-.top-section-content{
+.translate-service-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.translate-top-section {
+    
+    padding: 20px;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+}
+
+.translate-top-section-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.translate-top-section-content p {
+    color: #666;
 }
 
 .containercard {
@@ -86,7 +101,7 @@
 }
 
 @media (max-width: 768px) {
-    .service-card,.top-section {
+    .service-card,.translate-top-section {
         width: 90%;
        
         border-right: none;
@@ -94,11 +109,19 @@
         
        
     }
-
+    .translate-top-section-content h2 {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .translate-top-section{
+        text-align: left;
+        
+    }
     .service-card:last-child {
         border-bottom: none;
     }
-    .top-section:last-child{
+    .translate-top-section:last-child{
         border-bottom: none;
     }
 }

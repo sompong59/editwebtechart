@@ -20,7 +20,8 @@
      <header class="header">
         <div class="containerheader">
             <div class="logo">
-                <img src="../images/" alt="TechArt Logo">
+            <span class="tech">Tech</span><span class="art">Art</span>
+                <!-- <img src="../images/" alt="TechArt Logo"> -->
             </div>
             <div class="right-section">
                 

@@ -2,8 +2,24 @@ body {
     margin: 0;
     padding-top: 80px;
 }
+.logo {
+    font-family: sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff; /* ສີຫຼັກ */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tech {
+    color: #ffffff; /* ສີ Tech */
+}
+
+.art {
+    color: #ff9800; /* ສີ Art */
+}
 .header {
-    background-color: #0051a2;
+    background-color: #283593;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -124,6 +140,9 @@ body {
     
     .menu-toggle {
         display: block;
+        color: #ffffff;
+        margin-right: -10px;
+        
        
     }
 
@@ -176,7 +195,7 @@ body {
 
     .menu-toggle.active .fa-bars:before { /* ປ່ຽນໄອຄອນ */
         content: "\f00d"; /* ໄອຄອນກາຄູນ */
-        color: #e00909;
+        color: #ffffff;
         position: absolute; /* ເພີ່ມຕຳແໜ່ງ */
         top: 20px; /* ປັບຕຳແໜ່ງເທິງ */
         right: 20px; /* ປັບຕຳແໜ່ງຂວາ */
