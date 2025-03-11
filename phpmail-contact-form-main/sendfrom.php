@@ -1,27 +1,25 @@
-<?php $pageTitle = "ຟອມສົ່ງຂໍ້ມູນຂໍໃບສະເໜີລາຄາຟຣີ"; ?>
+<?php $pageTitle = "ຟອມສົ່ງຂໍ້ມູນ"; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="from.css">
-    <link rel="stylesheet" href="en/header.css">
-    <link rel="stylesheet" href="en/footer.css">
-    <link rel="stylesheet" href="en/social-buttons.css">
+    <link rel="stylesheet" href="styletext.css">
+    <!-- <link rel="stylesheet" href="stylecss/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
+
 </head>
 <body>
-    <?php include 'header.php';?>
 
-<div class="containerbody">
+    <div class="containerfrom">
         <h2>ຂໍໃບສະເໜີລາຄາຟຣີ</h2>
 
         <form action="contact.php" method="POST" enctype="multipart/form-data" id="contactForm">
             <div class="language-group">
                 <div class="form-group">
-                    <label>ເລືອກພາສາຕົ້ນສະບັບ <span class="required">*</span></label>
+                    <label>ເລືອກພາສາຕົ້ນສະບັບ<span class="required">*</span></label>
                     <select type="text" name="originalLanguage">
                         <option value="ພາສາລາວ ">ພາສາລາວ </option>
                         <option value="ພາສາອັງກິດ ">ພາສາອັງກິດ </option>
@@ -34,7 +32,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>ເລືອກພາສາເປົ້າໝາຍ <span class="required">*</span></label>
+                    <label>ເລືອກພາສາເປົ້າໝາຍ<span class="required">*</span></label>
                     <select type="text" name="targetLanguage">
                         <option value="ພາສາລາວ ">ພາສາລາວ </option>
                         <option value="ພາສາອັງກິດ ">ພາສາອັງກິດ </option>
@@ -56,18 +54,18 @@
             </select>
         </div>
             <div class="form-group">
-                <label> ແນບໄຟລ໌ຂອງທ່ານ (ສູງສຸດ 5 ໄຟລ໌) <span class="required">*</span></label>
+                <label> ແນບໄຟລ໌ຂອງທ່ານ (ສູງສຸດ 5 ໄຟລ໌) </label>
                 <div class="file-upload">
                     <input type="file" name="form_fields[]" multiple="multiple" data-maxsize="10" data-maxsize-message="This file exceeds the maximum allowed size.">
                 </div>
             </div>
             <div class="form-group">
-                <label>ປ້ອນຂໍ້ມູນຊື່ຂອງທ່ານ <span class="required">*</span></label>
+                <label>ປ້ອນຂໍ້ມູນຊື່ຂອງທ່ານ<span class="required">*</span> </label>
                 <input type="text" name="name" placeholder="ຊື່ຂອງຂອງ" required>
             </div>
             <div class="language-group">
                 <div class="form-group">
-                    <label> ທີ່ຢູ່ອີເມວຂອງທ່ານ <span class="required">*</span></label>
+                    <label> ທີ່ຢູ່ອີເມວຂອງທ່ານ <span class="required">*</span> </label>
                     <input type="email" name="email" placeholder="ທີ່ຢູອີເມວ" required>
                 </div>
                 <div class="form-group">
@@ -83,7 +81,7 @@
                 <label for="message">ຂໍ້ຄວາມ</label>
                 <textarea name="text" rows="5" placeholder="ກະລຸນາແຈ້ງຄວາມຕ້ອງການຂອງທ່ານ ເຊັ່ນ ຈຸດປະສົງຂອງການໃຊ້ຄໍາແປ ຯລຯ"></textarea>
             </div>
-            <button class="button1" type="submit" id="submitButton">ສົ່ງຂໍ້ມູນ</button>
+            <button type="submit" id="submitButton">ສົ່ງຂໍ້ມູນ</button>
             <div id="loadingIndicator" style="display: none;">ກຳລັງສົ່ງ...</div>
         </form>
 
@@ -101,7 +99,9 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php';?>
+
+   
+
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault();

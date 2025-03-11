@@ -2,23 +2,25 @@ body {
     margin: 0;
     padding-top: 80px;
 }
-.logo {
+
+.ta-logo {
     font-family: sans-serif;
     font-size: 3em;
     font-weight: bold;
-    color: #ffffff; /* ສີຫຼັກ */
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.tech {
-    color: #ffffff; /* ສີ Tech */
+.ta-tech {
+    color: #ffffff;
 }
 
-.art {
-    color: #ff9800; /* ສີ Art */
+.ta-art {
+    color: #ff9800;
 }
-.header {
+
+.ta-header {
     background-color: #283593;
     padding: 10px 0;
     position: fixed;
@@ -28,46 +30,44 @@ body {
     margin: 0;
 }
 
-.containerheader {
+.ta-containerheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
-   
-    
 }
 
-.logo img {
+.ta-logo img {
     height: 80px;
 }
 
-.right-section {
+.ta-right-section {
     display: flex;
     align-items: center;
 }
 
-.nav ul {
+.ta-nav ul {
     list-style: none;
     display: flex;
     margin-right: 20px;
 }
 
-.nav ul li {
+.ta-nav ul li {
     margin-right: 20px;
 }
 
-.nav ul li a {
+.ta-nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
 }
 
-.nav ul li a:hover {
+.ta-nav ul li a:hover {
     color: #007bff;
 }
 
-.button .request-quote {
+.ta-button .ta-request-quote {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -75,18 +75,18 @@ body {
     text-decoration: none;
 }
 
-.button .request-quote:hover {
+.ta-button .ta-request-quote:hover {
     background-color: #0056b3;
 }
 
-.menu-toggle {
+.ta-menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
     margin-right: 20px;
 }
 
-.language-button {
+.ta-language-button {
     border: none;
     background: none;
     cursor: pointer;
@@ -98,38 +98,41 @@ body {
     padding: 0;
 }
 
-.flag-icon {
+.ta-flag-icon {
     width: 25px;
     height: 18px;
     margin-right: 5px;
     vertical-align: middle;
 }
 
-.language-text {
+.ta-language-text {
     font-size: 16px;
     line-height: 1;
     vertical-align: middle;
     margin-right: 20px;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .ta-container {
         flex-direction: column;
         align-items: center;
     }
-    .language-switcher {
+
+    .ta-language-switcher {
         margin-right: 0;
-        margin-bottom: 10px; /* ປັບໄລຍະຫ່າງ */
+        margin-bottom: 10px;
     }
-    .language-button{
+
+    .ta-language-button {
         margin-bottom: 20px;
-        
     }
-    .language-text{
+
+    .ta-language-text {
         font-size: 14px;
     }
 
-    .right-section {
+    .ta-right-section {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -137,73 +140,60 @@ body {
         width: 100%;
     }
 
-    
-    .menu-toggle {
+    .ta-menu-toggle {
         display: block;
         color: #ffffff;
         margin-right: -10px;
-        
-       
     }
 
-    .button {
+    .ta-button {
         margin: 0;
         text-align: left;
         width: auto;
-   
-    }
-    .button .request-quote {
-        font-size: 14px; /* ປັບຂະໜາດຟອນຂອງປຸ່ມ */
-        padding: 8px 16px; /* ປັບ padding */
     }
 
-    .nav {
+    .ta-button .ta-request-quote {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .ta-nav {
         display: none;
         flex-direction: column;
         width: 100%;
         position: static;
-        
         padding: 20px;
         z-index: 10;
-        align-items: flex-end; /* ປ່ຽນເປັນ flex-end */
+        align-items: flex-end;
     }
 
-    .nav ul {
+    .ta-nav ul {
         flex-direction: column;
         margin-right: 0;
-        
     }
 
-    .nav ul li {
+    .ta-nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
         text-align: left;
-        
     }
-    .nav ul li a {
-        font-size: 14px; /* ປັບຂະໜາດຟອນຂອງລາຍການເມນູ */
-        white-space: nowrap; /* ປ້ອງກັນບໍ່ໃຫ້ຂໍ້ຄວາມແຕກແຖວ */
-    }
-  
 
-    .nav.active {
+    .ta-nav ul li a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .ta-nav.active {
         display: flex;
-       
     }
-    
-   
 
-    .menu-toggle.active .fa-bars:before { /* ປ່ຽນໄອຄອນ */
-        content: "\f00d"; /* ໄອຄອນກາຄູນ */
+    .ta-menu-toggle.active .fa-bars:before {
+        content: "\f00d";
         color: #ffffff;
-        position: absolute; /* ເພີ່ມຕຳແໜ່ງ */
-        top: 20px; /* ປັບຕຳແໜ່ງເທິງ */
-        right: 20px; /* ປັບຕຳແໜ່ງຂວາ */
+        position: absolute;
+        top: 20px;
+        right: 20px;
         font-size: 30px;
         z-index: 1000;
-    
-        
-        
     }
-   
 }
