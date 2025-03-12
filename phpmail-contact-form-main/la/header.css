@@ -1,9 +1,11 @@
+
 body {
     margin: 0;
     padding-top: 80px;
+  
 }
 
-.ta-logo {
+.logo {
     font-family: sans-serif;
     font-size: 3em;
     font-weight: bold;
@@ -12,15 +14,15 @@ body {
     letter-spacing: 2px;
 }
 
-.ta-tech {
+.tech {
     color: #ffffff;
 }
 
-.ta-art {
+.art {
     color: #ff9800;
 }
 
-.ta-header {
+.header {
     background-color: #283593;
     padding: 10px 0;
     position: fixed;
@@ -30,7 +32,7 @@ body {
     margin: 0;
 }
 
-.ta-containerheader {
+.containerheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,36 +40,37 @@ body {
     padding-right: 40px;
 }
 
-.ta-logo img {
+.logo img {
     height: 80px;
 }
 
-.ta-right-section {
+.right-section {
     display: flex;
     align-items: center;
 }
 
-.ta-nav ul {
+.nav ul {
     list-style: none;
     display: flex;
     margin-right: 20px;
 }
 
-.ta-nav ul li {
+.nav ul li {
     margin-right: 20px;
 }
 
-.ta-nav ul li a {
+.nav ul li a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
 }
 
-.ta-nav ul li a:hover {
+.nav ul li a:hover {
     color: #007bff;
 }
 
-.ta-button .ta-request-quote {
+/* ປ່ຽນ .button .request-quote ເປັນ .site-action-button .site-action-request-quote */
+.site-action-button .site-action-request-quote {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -75,18 +78,20 @@ body {
     text-decoration: none;
 }
 
-.ta-button .ta-request-quote:hover {
+/* ປ່ຽນ .button .request-quote:hover ເປັນ .site-action-button .site-action-request-quote:hover */
+.site-action-button .site-action-request-quote:hover {
     background-color: #0056b3;
 }
 
-.ta-menu-toggle {
+.menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
     margin-right: 20px;
 }
 
-.ta-language-button {
+/* ປ່ຽນ .language-button ເປັນ .site-action-language-button */
+.site-action-language-button {
     border: none;
     background: none;
     cursor: pointer;
@@ -98,14 +103,16 @@ body {
     padding: 0;
 }
 
-.ta-flag-icon {
+/* ປ່ຽນ .flag-icon ເປັນ .site-action-flag-icon */
+.site-action-flag-icon {
     width: 25px;
     height: 18px;
     margin-right: 5px;
     vertical-align: middle;
 }
 
-.ta-language-text {
+/* ປ່ຽນ .language-text ເປັນ .site-action-language-text */
+.site-action-language-text {
     font-size: 16px;
     line-height: 1;
     vertical-align: middle;
@@ -114,25 +121,27 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .ta-container {
+    .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .ta-language-switcher {
+    .language-switcher {
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .ta-language-button {
+    /* ປ່ຽນ .language-button ເປັນ .site-action-language-button */
+    .site-action-language-button {
         margin-bottom: 20px;
     }
 
-    .ta-language-text {
+    /* ປ່ຽນ .language-text ເປັນ .site-action-language-text */
+    .site-action-language-text {
         font-size: 14px;
     }
 
-    .ta-right-section {
+    .right-section {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -140,24 +149,26 @@ body {
         width: 100%;
     }
 
-    .ta-menu-toggle {
+    .menu-toggle {
         display: block;
         color: #ffffff;
         margin-right: -10px;
     }
 
-    .ta-button {
+    /* ປ່ຽນ .button ເປັນ .site-action-button */
+    .site-action-button {
         margin: 0;
         text-align: left;
         width: auto;
     }
 
-    .ta-button .ta-request-quote {
+    /* ປ່ຽນ .button .request-quote ເປັນ .site-action-button .site-action-request-quote */
+    .site-action-button .site-action-request-quote {
         font-size: 14px;
         padding: 8px 16px;
     }
 
-    .ta-nav {
+    .nav {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -167,27 +178,27 @@ body {
         align-items: flex-end;
     }
 
-    .ta-nav ul {
+    .nav ul {
         flex-direction: column;
         margin-right: 0;
     }
 
-    .ta-nav ul li {
+    .nav ul li {
         margin-right: 0;
         margin-bottom: 10px;
         text-align: left;
     }
 
-    .ta-nav ul li a {
+    .nav ul li a {
         font-size: 14px;
         white-space: nowrap;
     }
 
-    .ta-nav.active {
+    .nav.active {
         display: flex;
     }
 
-    .ta-menu-toggle.active .fa-bars:before {
+    .menu-toggle.active .fa-bars:before {
         content: "\f00d";
         color: #ffffff;
         position: absolute;

@@ -19,7 +19,7 @@ body {
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgb(0, 0, 164);
+    background-color: #283593;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body {
 }
 
 .card:hover .card-number {
-    background-color: rgb(255, 3, 3); /* Change background color on hover */
+    background-color: #283593;/* Change background color on hover */
 }
 
 .card-img-top {

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-.modal {
+.popup-modal { /* ປ່ຽນ .modal ເປັນ .popup-modal */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -12,18 +12,18 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-content {
+.popup-content { /* ປ່ຽນ .modal-content ເປັນ .popup-content */
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 15px; /* ຫຼຸດ padding ລົງ */
+    padding: 15px;
     border: 1px solid #888;
     border-radius: 8px;
     width: 80%;
-    max-width: 400px; /* ເພີ່ມຄວາມກວ້າງສູງສຸດ */
+    max-width: 400px;
     text-align: center;
-    max-height: 200px; /* ເພີ່ມຄວາມສູງສູງສຸດ */
-    overflow: auto; /* ເພີ່ມ scrollbar ຖ້າເນື້ອໃນຍາວເກີນ */
-    font-size: 14px; /* ຫຼຸດຂະໜາດຕົວອັກສອນ */
+    max-height: 200px;
+    overflow: auto;
+    font-size: 14px;
 }
 .close {
     color: #aaa;
@@ -45,8 +45,8 @@
 }
 
 body {
-	font-family: "Noto Sans Lao", sans-serif;
-    background-color: #f4f4f4;
+    font-family: "Noto Sans Lao", sans-serif;
+    background-color: #e50000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,26 +54,23 @@ body {
     margin: 0;
 }
 
-
 select, input, textarea, button{
     font-family: "Noto Sans Lao", sans-serif;
 }
 
-.file-upload {
+.upload-area { /* ປ່ຽນ .file-upload ເປັນ .upload-area */
     background-color: #f0f0f0;
     padding: 10px;
-    
-  
 }
 
-.language-group .form-group:first-child {
-    margin-right: 5px; /* ເພີ່ມ margin-right */
+.input-group .form-field:first-child { /* ປ່ຽນ .language-group ແລະ .form-group ເປັນ .input-group ແລະ .form-field */
+    margin-right: 5px;
 }
 
-.language-group .form-group:last-child {
-    margin-left: 5px; /* ເພີ່ມ margin-left */
+.input-group .form-field:last-child { /* ປ່ຽນ .language-group ແລະ .form-group ເປັນ .input-group ແລະ .form-field */
+    margin-left: 5px;
 }
-.containerfrom {
+.form-container { /* ປ່ຽນ .containerfrom ເປັນ .form-container */
     width: 900px;
     background-color: #fff;
     padding: 40px;
@@ -87,8 +84,8 @@ h2 {
     color: #333;
 }
 
-.form-group {
-    margin-bottom: 30px; /* ລຶບຊ່ອງຫວ່າງດ້ານລຸ່ມ */
+.form-field { /* ປ່ຽນ .form-group ເປັນ .form-field */
+    margin-bottom: 30px;
 }
 
 label {
@@ -111,7 +108,6 @@ textarea {
 .required{
     color: red;
 }
-
 
 select {
     width: 100%;
@@ -139,25 +135,25 @@ button:hover {
     background-color: #45a049;
 }
 
-.language-group, .name-phone-group {
+.input-group { /* ປ່ຽນ .language-group ເປັນ .input-group */
     display: flex;
 }
 
-.language-group .form-group, .name-phone-group .form-group {
+.input-group .form-field { /* ປ່ຽນ .language-group ແລະ .form-group ເປັນ .input-group ແລະ .form-field */
     width: 50%;
 }
 
 @media (max-width: 768px) {
-    .containerfrom {
+    .form-container { /* ປ່ຽນ .containerfrom ເປັນ .form-container */
         width: 90%;
         padding: 20px;
     }
 
-    .language-group, .name-phone-group {
+    .input-group { /* ປ່ຽນ .language-group ເປັນ .input-group */
         flex-direction: column;
     }
 
-    .language-group .form-group, .name-phone-group .form-group {
+    .input-group .form-field { /* ປ່ຽນ .language-group ແລະ .form-group ເປັນ .input-group ແລະ .form-field */
         width: 100%;
         margin-bottom: 15px;
     }
